@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #202020;
+  color: white;
+  padding: 30px;
+}
+
+.designs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.home,
+.blog {
+  background-color: #031d18;
+  width: 390px;
+  padding: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 5px;
+  font-size: 10px;
+}
+
+.top nav {
+  display: flex;
+  gap: 15px;
+}
+
+.top a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.hero-text {
+  position: relative;
+  padding: 35px 65px;
+  width: 100%;
+  text-shadow: 1px 1px 4px black;
+}
+
+.hero-text p {
+  font-size: 9px;
+  margin: 8px 0;
+}
+
+.hero-text h1 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.icons img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category {
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category h2 {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 15px;
+}
+
+.latest-blog {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 8px 5px;
+}
+
+.blog-card {
+  display: flex;
+  gap: 7px;
+  overflow: hidden;
+}
+
+.small-card {
+  min-width: 103px;
+  background-color: #116333;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 9px;
+}
+
+.small-card img {
+  width: 100%;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.small-card h4,
+.post h4 {
+  font-size: 9px;
+  margin: 8px 0;
+}
+
+.small-card p,
+.post p {
+  font-size: 8px;
+  line-height: 1.5;
+  color: #d1d1d1;
+}
+
+button {
+  display: block;
+  margin: 8px auto;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #e0e9df;
+  color: #222;
+  font-size: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 10px;
+}
+
+footer a {
+  color: white;
+  margin-right: 8px;
+}
+
+.blog-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog-top a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+
+}
+
+.blog-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 8px 5px;
+  border-top: 1px solid #28443d;
+  font-size: 6px;
+}
+
+.blog-menu span:first-child {
+  background-color: #168b46;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.featured {
+  height: 165px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 8px 0 15px;
+}
+
+.featured>img {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.featured-text {
+  position: absolute;
+  right: 0;
+  width: 48%;
+  background-color: #10582f;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.featured-text h3 {
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+.featured-text p {
+  font-size: 8px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.post {
+  width: calc((100% - 16px) / 3);
+  background-color: #116333;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.post img {
+  width: 100%;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.blog-footer {
+  text-align: center;
+  padding: 25px 10px 10px;
+  font-size: 8px;
+}
+
+.blog-footer h4 {
+  margin-bottom: 12px;
+}
+
+.blog-footer p {
+  font-size: 7px;
+  margin-bottom: 15px;
+}
+
+.blog-footer p:last-child {
+  text-align: start;
+  position: relative;
+  top: 20px;
+  right: 5px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
